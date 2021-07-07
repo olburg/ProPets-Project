@@ -6,6 +6,7 @@ import Home from "./Home";
 
 const FoundPets = () => {
     return (
+
         <section>
             <header>
                 <a href=""><img src="../images/Group 1.svg" alt="#"/></a>
@@ -64,6 +65,7 @@ const FoundPets = () => {
 
             </div>
         </section>
+
 
 
     )

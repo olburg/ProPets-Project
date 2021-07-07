@@ -3,6 +3,7 @@ import {NavLink, Route, Switch} from "react-router-dom";
 import Pages from "../layout/Pages";
 
 import FoundPets from "./FoundPets";
+import SignIn from "./SignIn";
 
 
 const Home =() => {
@@ -25,11 +26,11 @@ const Home =() => {
 
 
                 {/*<nav>*/}
-                {/*    <a href="/FoundPets">I found a pet!</a>*/}
+                {/*    <a href="/FoundPets" target="_blank">I found a pet!</a>*/}
                 {/*</nav>*/}
 
 
-                <NavLink exact={true} to="/FoundPets">I found a pet!</NavLink>
+                <NavLink exact={true} to="/FoundPets" activeStyle={{color: ""}}>I found a pet!</NavLink>
                 <div>
                     I’m okay, just want to <NavLink exact={true} to="/signIn">Join</NavLink> the pawsome community!
                 </div>
@@ -70,16 +71,11 @@ const Home =() => {
 
             <section>
                 <Switch>
-                    {/*<Route exact={true} path="/"><Home /></Route>*/}
-                    {/*<Route exact={true} path="lostPets" component={LostPets} />*/}
+                    <Route exact={true} path="/signIn"><SignIn /></Route>
+                    {/*<Route exact={true} path="LostPets" component={LostPets} />*/}
                     <Route exact={true} path="/FoundPets" component={FoundPets}/>
                 </Switch>
             </section>
-
-
-
-
-
         </section>
     )
 }
