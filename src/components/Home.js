@@ -1,21 +1,34 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import {NavLink, Route, Switch} from "react-router-dom";
 import Pages from "../layout/Pages";
+
+import FoundPets from "./FoundPets";
 
 
 const Home =() => {
     return (
         <section>
-            <header className="header">
-                <img src="http://www.w3.org/2000/svg" width="141.833" height="33.278" alt="#"/>
-                <NavLink exact={true} to="/signIn">SignIn</NavLink>
-            </header>
+            <nav>
+                <header className="header">
+                    <img src="http://www.w3.org/2000/svg" width="141.833" height="33.278" alt="#"/>
+                    {/*<a href="/signIn"></a>*/}
+                    <NavLink exact={true} to="/signIn">SignIn</NavLink>
+                </header>
+            </nav>
+
 
             <section>
                 <h1 className=""> Welcome to your pawfessional community</h1>
 
                 <NavLink exact={true} to="/LostPets" activeStyle={{color: ""}}>I lost my pet!</NavLink>
                 <br />
+
+
+                {/*<nav>*/}
+                {/*    <a href="/FoundPets">I found a pet!</a>*/}
+                {/*</nav>*/}
+
+
                 <NavLink exact={true} to="/FoundPets">I found a pet!</NavLink>
                 <div>
                     I’m okay, just want to <NavLink exact={true} to="/signIn">Join</NavLink> the pawsome community!
@@ -53,6 +66,17 @@ const Home =() => {
                 <div><img src="" alt="#"  /></div>
                 <div>1600 Amphitheatre Pkwy Mountain View, CA 94043, USA</div>
             </section>
+
+
+            <section>
+                <Switch>
+                    {/*<Route exact={true} path="/"><Home /></Route>*/}
+                    {/*<Route exact={true} path="lostPets" component={LostPets} />*/}
+                    <Route exact={true} path="/FoundPets" component={FoundPets}/>
+                </Switch>
+            </section>
+
+
 
 
 

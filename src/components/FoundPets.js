@@ -1,6 +1,7 @@
 import React from "react";
 
-import { NavLink, Router } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+
 import Home from "./Home";
 
 const FoundPets = () => {
