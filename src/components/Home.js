@@ -1,7 +1,8 @@
 import React from "react";
 import {NavLink, Route, Switch} from "react-router-dom";
-import Logo from "../images/Group 1.svg"
+import Logo from "../images/Group1.svg"
 import Dog from "../images/Image2.jpg"
+import Pets from "../images/8347.png"
 import FoundPets from "./FoundPets";
 import SignIn from "./SignIn";
 import LostPets from "./LostPets";
@@ -13,9 +14,9 @@ const Home = () => {
         <section>
             <nav>
                 <header className="header">
-                <img src={Logo} alt="#"></img>
-                   
-                    <NavLink exact={true} to="/signIn">SignIn</NavLink>
+                <img src={Logo} alt="#"/>
+
+                <NavLink exact={true} to="/signIn">SignIn</NavLink>
                 </header>
             </nav>
 
@@ -33,7 +34,7 @@ const Home = () => {
                     I’m okay, just want to <NavLink exact={true} to="/signIn">Join</NavLink> the pawsome community!
                 </div>
 
-                <div><img src={Dog}></img></div>
+                <div className="dog"><img src={Dog}/></div>
             </section>
 
             <section>
@@ -43,6 +44,7 @@ const Home = () => {
 
             <section>
                 <div>
+                    <div className=""><img src={Pets} alt="#"/></div>
                 <h3>
                     Here is collected everything that your pet needs:
                 </h3>
@@ -62,18 +64,12 @@ const Home = () => {
             </div>
             </section>
             <section className="footer">
-                <div><img src="" alt="#"  /></div>
+                <div><img src={Logo} alt="#"  /></div>
                 <div>1600 Amphitheatre Pkwy Mountain View, CA 94043, USA</div>
             </section>
 
 
-            <section>
-                <Switch>
-                    <Route exact={true} path="/signIn"><SignIn /></Route>
-                    <Route exact={true} path="/LostPets" component={LostPets} />
-                    <Route exact={true} path="/FoundPets" component={FoundPets}/>
-                </Switch>
-            </section>
+
         </section>
     )
 }

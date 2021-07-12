@@ -5,12 +5,13 @@ import { BrowserRouter } from "react-router-dom";
 
 // import { Provider } from "react-redux";
 import Home from "./components/Home";
+import Pages from "./layout/Pages";
 
 
 ReactDOM.render(
     // <Provider store={}>
         <BrowserRouter>
-            <Home />
+            <Pages />
 
         </BrowserRouter>,
     // </Provider>,

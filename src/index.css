@@ -18,12 +18,45 @@ code {
 }
 
 
-.red {
-  background-color: #FA5456;
-}
+/*.red {*/
+/*  background-color: #FA5456;*/
+/*}*/
 
 .header {
   background-color: #06B2BB;
+}
+
+.body {
+  position: relative;
+  width: 1366px;
+  height: 550px;
+
+
+  background-color: #06B2BB;
+}
+
+.signing {
+  position: absolute;
+  background-color: white;
+
+  top: 100px;
+  bottom: 100px;
+  left: 323px;
+  width: 720px;
+  height: 500px;
+}
+
+.frow {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.dog {
+  top: 79px;
+  left: 720px;
+  width: 486px;
+  height: 641px;
+
 }
 
 .footer {
