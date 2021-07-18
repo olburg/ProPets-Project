@@ -25,17 +25,17 @@ const SignIn = () => {
                     </div>
                     <div className="form-group">
                         <label>Password</label>
-                        <input type="text" className="form-control" name="passwort"/>
+                        <input type="text" className="form-control" name="password"/>
                     </div>
                     <div className="form-group">
                         <label>Password</label>
-                        <input type="text" className="form-control" name="passwort"/>
+                        <input type="text" className="form-control" name="password"/>
                     </div>
                 </form>
                 <div>
                     <p>By clicking “Submit”, you agree to us processing your information in accordance with these terms.</p>
-                    <button type="submit" className="btn btn-primary w-100">Cancel</button>
-                    <button type="submit" className="btn btn-primary w-100">Submit</button>
+                    <button type="submit" className="btn btn-primary w-40">Cancel</button>
+                    <button type="submit" className="btn btn-primary w-40">Submit</button>
                 </div>
 
 

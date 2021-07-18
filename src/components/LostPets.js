@@ -7,6 +7,8 @@ import Dog from "../images/Dog.png";
 import Cat from "../images/Cat.png";
 import Parrot from "../images/Parrot.png";
 import Cat1 from "../images/Cat1.png";
+import Header from "./Header";
+import Nav from "./Nav";
 
 
 
@@ -14,14 +16,14 @@ const LostPets = () => {
     return (
 
         <section>
-            <header className="header">
-                <a href=""><img src={Logo} alt="#"/> </a>
-            </header>
+            <div>
+                <Header />
+            </div>
+            <div>
+                <Nav />
+            </div>
 
-            <NavLink exact={true} to="/LostPets">Lost</NavLink>
-            <NavLink exact={true} to="/FoundPets">Found</NavLink>
-
-            <div><span>Found pets</span></div>
+            <div><span>Lost pets</span></div>
 
             <div>
                 Would you like to publish a post? <NavLink exact={true} to="/signIn">Join</NavLink> the our community!
@@ -32,7 +34,7 @@ const LostPets = () => {
                     <h3>Uncle Sam</h3>
                     <p>Oliver Platy, Berlin</p>
                     <img src={BigDog} alt="#"/>
-                    <a href="">view details>></a>
+                    <NavLink exact={true} to="/LostDog">view details>></NavLink>
                 </div>
                 <div>
                     <h3>John Goodboy</h3>

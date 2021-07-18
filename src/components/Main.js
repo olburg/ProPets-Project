@@ -1,44 +1,43 @@
 import React from "react";
-import {NavLink, Route, Switch} from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import FontAwesome from 'react-fontawesome'
 import Logo from "../images/Group1.svg"
 import Dog from "../images/Image2.jpg"
 import Pets from "../images/8347.png"
-import FoundPets from "./FoundPets";
-import SignIn from "./SignIn";
-import LostPets from "./LostPets";
+import Header from "./Header";
 
 
-const Home = () => {
+
+const Main = () => {
    
     return (
         <section>
-            <nav>
-                <header className="header">
-                <img src={Logo} alt="#"/>
+            <Header />
+            {/*<nav>*/}
+            {/*    <header className="header">*/}
+            {/*    <img src={Logo} alt="#"/>*/}
 
-                <NavLink exact={true} to="/signIn">SignIn</NavLink>
-                </header>
-            </nav>
-
-
-            <section>
-                <h1 className=""> Welcome to your pawfessional community</h1>
-
-                <NavLink exact={true} to="/LostPets" activeStyle={{color: ""}}>I lost my pet!</NavLink>
-                <br />
+            {/*    <NavLink exact={true} to="/signIn">SignIn</NavLink>*/}
+            {/*    </header>*/}
+            {/*</nav>*/}
 
 
+            <section className="welcome-wrapper">
+                <h1 className="welcome"> Welcome to your <span>pawfessional</span> community</h1>
 
+                <NavLink exact={true} to="/LostPets" activeStyle={{color: "red"}}>I lost my pet!</NavLink>
                 <NavLink exact={true} to="/FoundPets" activeStyle={{color: ""}}>I found a pet!</NavLink>
-                <div>
+
+
+                <div className="">
                     I’m okay, just want to <NavLink exact={true} to="/signIn">Join</NavLink> the pawsome community!
                 </div>
 
-                <div className="dog"><img src={Dog}/></div>
+                <div className="dog"><img src={Dog} className="dog-foto"/></div>
             </section>
 
-            <section>
-                <h2>Our fluffy space for lovers, admirers, dads and moms of our four-legged, winged, tailed guys.</h2>
+            <section className="about">
+                <div className="about-text">Our fluffy space for lovers, admirers, dads and moms of our four-legged, winged, tailed guys.</div>
             </section>
 
 
@@ -74,4 +73,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default Main
