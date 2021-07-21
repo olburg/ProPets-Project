@@ -1,6 +1,7 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import FontAwesome from 'react-fontawesome'
+
 import Logo from "../images/Group1.svg"
 import Dog from "../images/Image2.jpg"
 import Pets from "../images/8347.png"
@@ -8,10 +9,10 @@ import Header from "./Header";
 
 
 
-const Main = () => {
+const Start = () => {
    
     return (
-        <section>
+        <section className="start">
             <Header />
             {/*<nav>*/}
             {/*    <header className="header">*/}
@@ -23,21 +24,29 @@ const Main = () => {
 
 
             <section className="welcome-wrapper">
-                <h1 className="welcome"> Welcome to your <span>pawfessional</span> community</h1>
-
-                <NavLink exact={true} to="/LostPets" activeStyle={{color: "red"}}>I lost my pet!</NavLink>
-                <NavLink exact={true} to="/FoundPets" activeStyle={{color: ""}}>I found a pet!</NavLink>
-
-
-                <div className="">
-                    I’m okay, just want to <NavLink exact={true} to="/signIn">Join</NavLink> the pawsome community!
+                <div className="welcome">
+                    <h1 className="welcome-text"> Welcome to your <span>pawfessional</span> community</h1>
+                    <div className="wanttojoin">
+                        I’m okay, just want to <NavLink exact={true} to="/signIn">Join</NavLink> the pawsome community!
+                    </div>
                 </div>
 
-                <div className="dog"><img src={Dog} className="dog-foto"/></div>
+                <div className="dog-wrapper">
+                    <div className="dog"> </div>
+                    {/*<div className="dog"><img src={Dog} className="dog-foto"/></div>*/}
+
+                </div>
+
+
+            </section>
+
+            <section>
+                <NavLink exact={true} to="/LostPets" style={{ textDecoration: "none", color: "green" }}>I lost my pet!</NavLink>
+                <NavLink exact={true} to="/FoundPets" activeStyle={{color: ""}}>I found a pet!</NavLink>
             </section>
 
             <section className="about">
-                <div className="about-text">Our fluffy space for lovers, admirers, dads and moms of our four-legged, winged, tailed guys.</div>
+                <p className="about-text">Our fluffy space for lovers, admirers, dads and moms of our four-legged, winged, tailed guys.</p>
             </section>
 
 
@@ -73,4 +82,4 @@ const Main = () => {
     )
 }
 
-export default Main
+export default Start

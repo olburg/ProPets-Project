@@ -17,9 +17,9 @@ const Nav = () => {
                 </div>
             </div>
 
-            <div className="nav-left">
-                {/*<p>green background</p>*/}
-            </div>
+            {/*<div className="nav-left">*/}
+            {/*    /!*<p>green background</p>*!/*/}
+            {/*</div>*/}
 
         </nav>
 
