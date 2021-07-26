@@ -52,8 +52,8 @@ const LostDog = () => {
                 </section>
 
 
-                <section>
-                    <div style={ {background:"green"} }>Background: green</div>
+                <section className="nav-right">
+
                 </section>
 
             </section>

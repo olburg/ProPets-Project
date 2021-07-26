@@ -1,28 +1,30 @@
 import React from "react"
-import Header from "./Header";
+
 import Nav from "./Nav";
 import Cat from "../images/Cat.png";
-import HeaderWhite from "./HeaderWhite";
+import ProfileLogout from "./ProfileLogout";
+
+import HeaderWhiteNew from "./HeaderWhiteNew";
+import Navigation from "./Navigation";
 
 
-const FoundCat = () => {
+const HomeFoundCat = () => {
     return (
         <section>
 
+            <div>
+                <HeaderWhiteNew />
+            </div>
 
-            <section>
-                <HeaderWhite />
-            </section>
 
             <section className="d-flex row-cols-lg-3 row-cols-md-3">
-                <section>
-                    <Nav />
+                <section className="nav-right">
+                    <Navigation />
                 </section>
-
 
                 <section>
                     <div>
-                        <h3>Lost pet: <span>Cat </span> | Schloss Str, Potsdam</h3>
+                        <h3>Found pet: <span>Cat</span> | Schloss Str, Potsdam</h3>
                     </div>
                     <div>
                         <img src={Cat} alt=""/>
@@ -55,14 +57,9 @@ const FoundCat = () => {
 
                 </section>
 
-
-
-
-
-                <section className="nav-right">
-
+                <section className="nav-left">
+                    <ProfileLogout/>
                 </section>
-
 
             </section>
 
@@ -75,4 +72,4 @@ const FoundCat = () => {
     )
 }
 
-export default FoundCat
+export default HomeFoundCat

@@ -3,44 +3,44 @@ import React from "react";
 
 import { NavLink } from "react-router-dom";
 
+
 import BigDog from "../images/BigDog.png"
 import Puppy from "../images/Puppy.png"
 import Dog from "../images/Dog.png"
 import Cat from "../images/Cat.png"
 import Parrot from "../images/Parrot.png"
 import Cat1 from "../images/Cat1.png"
-import Nav from "./Nav";
-import HeaderWhite from "./HeaderWhite";
+
+import Navigation from "./Navigation";
+
+import ProfileLogout from "./ProfileLogout";
+import HeaderWhiteNew from "./HeaderWhiteNew";
 
 
 
-const FoundPets = () => {
+const HomeFound = () => {
     return (
 
-        <section>
-            <div>
-                <HeaderWhite />
-
-            </div>
+        <section >
+            <section>
+                <HeaderWhiteNew />
+            </section>
 
             <section className="d-flex row-cols-lg-3 row-cols-md-3">
-                <section>
-                    <Nav />
+                <section className="nav-right">
+                    <Navigation />
                 </section>
 
                 <section>
                     <h3><span>Found pets</span></h3>
 
-                    <div>
-                        Would you like to publish a post? <NavLink exact={true} to="/signIn">Join</NavLink> the our community!
-                    </div>
 
                     <div className="frow">
                         <div>
                             <h3>Big dog</h3>
                             <p>Oliver Platy, Berlin</p>
                             <img src={BigDog} alt="#"/>
-                            <a href="/FoundCat">view details>></a>
+                            <a href="/HomeFoundCat">view details>></a>
                         </div>
                         <div>
                             <h3>Puppy</h3>
@@ -62,7 +62,7 @@ const FoundPets = () => {
                             <h3>Cat</h3>
                             <p>Oliver Platy, Berlin</p>
                             <img src={Cat} alt="#"/>
-                            <NavLink exact={true} to="/FoundCat">view details>></NavLink>
+                            <NavLink exact={true} to="/HomeFoundCat">view details>></NavLink>
                             {/*<a href="">view details>></a>*/}
                         </div>
                         <div>
@@ -80,9 +80,10 @@ const FoundPets = () => {
                     </div>
                 </section>
 
-                <section className="nav-right">
-
+                <section className="nav-left">
+                    <ProfileLogout/>
                 </section>
+
 
             </section>
 
@@ -97,4 +98,4 @@ const FoundPets = () => {
 
 }
 
-export default FoundPets
+export default HomeFound

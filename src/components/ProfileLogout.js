@@ -1,24 +1,26 @@
 import React from "react";
 import {NavLink} from "react-router-dom";
+import {fas, faSignOutAlt} from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 
 
 const ProfileLogout = () => {
     return (
 
-        <section>
+        <section className="container">
 
 
             <div>
-                <NavLink exact={true} to="/Profile">
+                <NavLink exact={true} to="/Profile" style={ {textDecoration: "none", color: "white", fontSize: "20px", fontFamily: "Montserrat, sans-serif"} }>
                     {/*<img src="" alt="#"/>*/}
                     <p>Anna Smith</p>
                 </NavLink>
             </div>
 
 
-            <button type="submit" className="btn btn-success w-40">
-                <NavLink exact={true} to="/">LogOut</NavLink>
-            </button>
+            <div className="nav-fill">
+                <NavLink exact={true} to="/" style={ {textDecoration: "none", color: "white", fontSize: "20px", fontFamily: "Montserrat, sans-serif"} }><FontAwesomeIcon icon={faSignOutAlt} />LogOut</NavLink>
+            </div>
 
 
         </section>

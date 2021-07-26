@@ -1,38 +1,38 @@
-import React from "react"
-import Header from "./Header";
+import React from "react";
+
 import Nav from "./Nav";
-import Cat from "../images/Cat.png";
+
+import BigDog from "../images/BigDog.png"
+import ProfileLogout from "./ProfileLogout";
+import Navigation from "./Navigation";
 import HeaderWhite from "./HeaderWhite";
 
-
-const FoundCat = () => {
+const LostDog = () => {
     return (
         <section>
-
-
             <section>
                 <HeaderWhite />
             </section>
 
             <section className="d-flex row-cols-lg-3 row-cols-md-3">
-                <section>
-                    <Nav />
+
+                <section className="nav-right">
+                    <Navigation />
                 </section>
 
 
                 <section>
                     <div>
-                        <h3>Lost pet: <span>Cat </span> | Schloss Str, Potsdam</h3>
+                        <h3>Lost pet: <span>Uncle Sam</span> | Schloss Str, Potsdam</h3>
                     </div>
                     <div>
-                        <img src={Cat} alt=""/>
+                        <img src={BigDog} alt=""/>
                     </div>
 
                     <div>
-                        <h4>Cat</h4>
+                        <h4>Dog, Golden retriever</h4>
                         <p>Dec 12, 2019</p>
                     </div>
-
                     <div>
                         <p>Color: golden</p>
                         <p>Sex: male</p>
@@ -46,7 +46,6 @@ const FoundCat = () => {
                     <div>
                         Description: brown fox jumps over a lazy dog. DJs flock by when MTV ax quiz prog. Junk MTV quiz graced by fox whelps. Bawds jog, flick quartz, vex nymphs. raced by fox whelps. Bawds jog, flick quartz, vex nymphs.
                     </div>
-
                     <div>
                         <p>Owner: Anna Smith</p>
                         <p>Phone: 000 000 0000</p>
@@ -56,23 +55,16 @@ const FoundCat = () => {
                 </section>
 
 
-
-
-
-                <section className="nav-right">
-
+                <section className="nav-left">
+                    <ProfileLogout/>
                 </section>
 
-
             </section>
-
-
-
-
-
-
         </section>
+
+
+
     )
 }
 
-export default FoundCat
+export default LostDog

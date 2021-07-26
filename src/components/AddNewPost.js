@@ -2,12 +2,13 @@ import React from "react";
 
 import HeaderWhite from "./HeaderWhite"
 import ProfileLogout from "./ProfileLogout";
-// import Navigation from "./Navigation"
+import Navigation from "./Navigation";
+import {NavLink} from "react-router-dom";
+
 
 
 const AddNewPost = () => {
     return (
-
         <section>
             <section>
                 <HeaderWhite />
@@ -15,12 +16,12 @@ const AddNewPost = () => {
 
             <section className="d-flex row row-cols-lg-3 row-cols-md-3" >
 
-                <section>
-                    {/*<Navigation />*/}
+                <section className="nav-right">
+                    <Navigation />
                 </section>
 
-                <section className="container">
-                    <div className="post-wrapper">
+                <section className="post-wrapper">
+                    <div >
                         <div className="header-text">Your new post! Simply text, add photo and publish.</div>
                     </div>
 
@@ -37,7 +38,7 @@ const AddNewPost = () => {
                                 <label className=" col-form-label">Text <br/> up to 1500 char</label>
                             </div>
                             <div className="">
-                                <input type="text" className="form-control " name="title"
+                                <input type="text" className="form-control" id="exampleFormControlTextarea1" rows="10" name="title"
                                        placeholder="Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                                Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown
                                printer took a galley of type and scrambled it to make a type specimen book. It has survived not
@@ -60,14 +61,18 @@ const AddNewPost = () => {
                             </div>
                         </form>
 
+                        <div  > <NavLink exact={true} to="/Home"> <button className="btn btn-green w-50" >Publish </button> </NavLink></div>
+
                     </div>
                 </section>
 
-                <section>
+                <section className="nav-left">
                     <ProfileLogout />
                 </section>
 
+
             </section>
+
 
 
 
