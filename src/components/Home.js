@@ -1,77 +1,73 @@
 import React from "react";
-import {NavLink, Route, Switch} from "react-router-dom";
-import Logo from "../images/Group1.svg"
-import Dog from "../images/Image2.jpg"
-import Pets from "../images/8347.png"
-import FoundPets from "./FoundPets";
-import SignIn from "./SignIn";
-import LostPets from "./LostPets";
+
+import Puppy from "../images/Puppy.png"
+import BigDog from "../images/BigDog.png"
+import PostPhoto from "../images/PostPhoto.png"
+
+import {NavLink} from "react-router-dom";
+import HeaderWhite from "./HeaderWhite";
+import ProfileLogout from "./ProfileLogout";
+import MainNav from "./MainNav"
+import Pages from "../layout/Pages";
 
 
-const Home = () => {
-   
-    return (
+
+const Home = ( )=> {
+    return(
         <section>
-            <nav>
-                <header className="header">
-                <img src={Logo} alt="#"/>
-
-                <NavLink exact={true} to="/signIn">SignIn</NavLink>
-                </header>
-            </nav>
-
 
             <section>
-                <h1 className=""> Welcome to your pawfessional community</h1>
+                 <HeaderWhite />
+             </section>
 
-                <NavLink exact={true} to="/LostPets" activeStyle={{color: ""}}>I lost my pet!</NavLink>
-                <br />
+            <section className="d-flex row-cols-lg-3 row-cols-md-3">
 
+                <section>
+                    <MainNav />
+                    
+                </section>
 
+                
+                <section></section>
 
-                <NavLink exact={true} to="/FoundPets" activeStyle={{color: ""}}>I found a pet!</NavLink>
-                <div>
-                    I’m okay, just want to <NavLink exact={true} to="/signIn">Join</NavLink> the pawsome community!
-                </div>
-
-                <div className="dog"><img src={Dog}/></div>
-            </section>
-
-            <section>
-                <h2>Our fluffy space for lovers, admirers, dads and moms of our four-legged, winged, tailed guys.</h2>
-            </section>
-
-
-            <section>
-                <div>
-                    <div className=""><img src={Pets} alt="#"/></div>
-                <h3>
-                    Here is collected everything that your pet needs:
-                </h3>
-                <div>
-                    <ul>
-                        <li>professional veterinarian tips;</li>
-                        <li>useful information about education and care;</li>
-                        <li>information about pet-sitting and walking service;</li>
-                        <li>and of course, great communication with new friends in your social network!</li>
-                    </ul>
+                <section >
 
                     <div>
-                        Make an account and <NavLink exact={true} to="/signIn">Join</NavLink> to us!
+                        <img src={Puppy} alt=""/>
+                        <h5>John Goodboy</h5>
+                        <p>6 April, 10:15</p>
+                        <p>The quick, brown fox jumps over a lazy dog. …more>></p>
+                        <div className="far fa-thumbs-up"> </div>
                     </div>
 
-                </div>
-            </div>
+                    <div>
+                        <img src={BigDog} alt=""/>
+                        <h5>Uncle Sam</h5>
+                        <p>5 April, 14:00</p>
+                        <img src={PostPhoto} alt=""/>
+                        <p><NavLink exact={true} to="/MainPost">Fox nymphs grab quick-jived waltz. …more>></NavLink></p>
+                        <p><NavLink exact={true} to="/MainPost">…more>></NavLink></p>
+                    </div>
+
+                    <div>
+                        <img src={Puppy} alt=""/>
+                        <h5>John Goodboy</h5>
+                        <p>6 April, 10:15</p>
+                        <p>The quick, brown fox jumps over a lazy dog. </p>
+                        <p>…more>></p>
+                    </div>
+
+                </section>
+
+                <section>
+                    <ProfileLogout/>
+                </section>
+
             </section>
-            <section className="footer">
-                <div><img src={Logo} alt="#"  /></div>
-                <div>1600 Amphitheatre Pkwy Mountain View, CA 94043, USA</div>
-            </section>
-
-
-
         </section>
+
     )
+
 }
 
 export default Home
