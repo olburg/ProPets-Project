@@ -1,11 +1,7 @@
 
 
 
-* {
-  /*margin: 0;*/
-  font-family: "Monserrat", sans-serif !important;
-;
-}
+
 
 body {
   width: 100%;
@@ -15,7 +11,7 @@ body {
   /*  sans-serif;*/
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Monserrat", sans-serif !important;
+  font-family: "Montserrat", sans-serif;
 
 }
 
@@ -29,6 +25,10 @@ textarea {
   font-family: "Montserrat", sans-serif;
   font-size: 10px;
   color: #bababa;
+}
+
+.input-comment {
+  height: 300px ;
 }
 
 exampleFormControlTextarea1 {
