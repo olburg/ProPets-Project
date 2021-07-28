@@ -17,9 +17,17 @@ body {
 
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.label {
+  margin-left: 30px;
+  font-weight: normal;
+  color: #393939;
+  /*text-align: right;*/
+
+}
+
+.input {
+  border: none;
+  border-bottom: 1px solid;
 }
 
 
