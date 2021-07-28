@@ -13,9 +13,9 @@ const LostDog = () => {
 
             <section className="d-flex row-cols-lg-3 row-cols-md-3">
 
-                <section>
+                {/* <section>
                     <Nav />
-                </section>
+                </section> */}
 
 
                 <section>
@@ -52,8 +52,8 @@ const LostDog = () => {
                 </section>
 
 
-                <section className="nav-right">
-
+                <section>
+                    <div style={ {background:"green"} }>Background: green</div>
                 </section>
 
             </section>

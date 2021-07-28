@@ -4,7 +4,6 @@ import BigDog from "../images/BigDog.png";
 import PostPhoto from "../images/PostPhoto.png";
 import {NavLink} from "react-router-dom";
 import ProfileLogout from "./ProfileLogout";
-import Navigation from "./Navigation";
 
 
 
@@ -13,14 +12,14 @@ const MainPost = () => {
     return(
         <section>
 
-            <section >
+            <section>
                 <HeaderWhite />
             </section>
 
             <section className="d-flex row-cols-lg-3 row-cols-md-3">
 
-                <section className="nav-right">
-                    <Navigation/>
+                <section>
+                    {/*<Navigation/>*/}
                 </section>
 
                 <section>
@@ -49,7 +48,7 @@ const MainPost = () => {
                     </div>
                 </section>
 
-                <section className="nav-left">
+                <section>
                     <ProfileLogout/>
                 </section>
 

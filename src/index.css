@@ -3,43 +3,45 @@
 
 * {
   /*margin: 0;*/
-  font-family: "Monserrat", sans-serif !important;
 }
 
 body {
   width: 100%;
   /*margin: 0 auto;*/
-  /*font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',*/
-  /*  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',*/
-  /*  sans-serif;*/
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Monserrat", sans-serif !important;
+  font-family: Monserrat, sans-serif;
 
 }
 
-/*code {*/
-/*  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',*/
-/*    monospace;*/
+.label {
+  margin-left: 30px;
+  font-weight: normal;
+  color: #393939;
+  /*text-align: right;*/
+
+}
+
+.input {
+  border: none;
+  border-bottom: 1px solid;
+}
+
+
+
+/*.red {*/
+/*  background-color: #FA5456;*/
 /*}*/
 
-input,
-textarea {
-  font-family: "Montserrat", sans-serif;
-  font-size: 10px;
-  color: #bababa;
-}
 
-exampleFormControlTextarea1 {
-  font-family: "Monserrat", sans-serif;
-
-}
 
 
 .start {
   width: 80%;
   margin: 0 auto;
-  /*position: relative;*/
 }
 
 .header-green {
@@ -158,7 +160,7 @@ exampleFormControlTextarea1 {
 /*}*/
 
 .welcome-wrapper {
-  position: relative;
+  /*position: relative;*/
 
   display: flex;
   flex-wrap: nowrap;
@@ -182,7 +184,7 @@ exampleFormControlTextarea1 {
 }
 
 .welcome-text {
-  font-family: Montserrat, sans-serif !important;
+  font-family: Montserrat, sans-serif;
   display: inline-block;
   padding-top: 100px;
   padding-left: 50px;
@@ -197,7 +199,6 @@ exampleFormControlTextarea1 {
 
 .welcome-text > span {
   color: #06B2BB;
-  /*font-family: Monserrat sans-serif !important;*/
 }
 
 .wanttojoin {
@@ -235,88 +236,21 @@ exampleFormControlTextarea1 {
 /*  !*left: 1000px;*!*/
 /*}*/
 
-.buttons {
-  position: absolute;
-  top: 544px;
-  /*left: -21px;*/
-  /*width: 544px;*/
-  /*height: 95px;*/
-
-text-align: right;
-
-
-
-}
-
-/*.post-wrapper {*/
-/*  width: 800px;*/
-/*  height: 600px;*/
-/*}*/
-
-
-.lost_button {
-  /*top: 644px;*/
-  /*left: -1510px;*/
-  margin-left: -250px;
-
-  padding: 30px;
-  font-size: 40px;
-  font-family: Monserrat sans-serif;
-  font-weight: bold;
-  text-decoration: none;
-
-  width: 850px;
-  margin-bottom: 20px;
-  background-color: #FA5456;
-  border-radius: 60px;
-}
-
-.lost_button:hover {
-  background-color: yellow;
-}
-
-.found_button {
-  /*top: 551px;*/
-  left: -21px;
-  width: 770px;
-  /*height: 93px;*/
-  font-size: 40px;
-  padding: 30px;
-  font-family: Monserrat sans-serif;
-  font-weight: bold;
-  background-color: #06B2BB;
-  border-radius: 60px;
-
-  margin-left: -250px;
-}
-
-.logo_pets {
-  /*top: 459px;*/
-  /*left: 441px;*/
-  width: 79px;
-  height: 80px;
-
-
-}
-
 .about {
   background-color: #06B2BB;
   color: white;
   /*width: 70%;*/
   height: 260px;
-
+  font-size: 60px;
   padding: 30px 30px;
 
 }
 
 .about-text {
-  display: block;
-  font-family: Monserrat, sans-serif !important;
-  font-size: 42px;
+  font-family: Monserrat, sans-serif;
   margin: 0 auto;
-  width: 750px;
+  width: 70%;
   text-align: center;
-
 
 }
 
@@ -332,34 +266,21 @@ text-align: right;
   background-color: #06B2BBCC;
   padding-top: 30px;
   padding-right: 10px;
-  margin-right: 30px;
 
   /*padding: 30px 30px 0 -30px;*/
-  /*position: absolute;*/
-  top: 90px;
+  position: absolute;
+  top: 0;
   left: 0;
 }
 
 .nav-left {
   width: 307px;
   height: 740px;
-  top: 90px;
+  top: 0;
   right: 0;
   position: absolute;
   background-color: #06B2BBCC;
-  text-decoration: none;
 
-}
-
-.nav-wrapper {
-
-  margin-left: 150px;
-}
-
-.services {
-  margin-top: 70px;
-  color: #FFFFFF;
-  text-decoration: none;
 }
 
 .nav-item {
@@ -374,15 +295,6 @@ text-align: right;
   font-size: 19px;
   border-radius: 50px;
   text-decoration: none;
-
-}
-
-.nav-item-new {
-  color: #FFFFFF;
-  font-family: "Monserrat", SansSerif, sans-serif;
-
-text-decoration: none;
-  text-align: left;
 
 }
 

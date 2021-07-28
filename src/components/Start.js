@@ -3,11 +3,9 @@ import { NavLink } from "react-router-dom";
 import FontAwesome from 'react-fontawesome'
 
 import Logo from "../images/Group1.svg"
-import LogoPet from "../images/LogoPet.svg"
 import Dog from "../images/Image2.jpg"
 import Pets from "../images/8347.png"
 import Header from "./Header";
-import Nav from "./Nav";
 
 
 
@@ -39,24 +37,16 @@ const Start = () => {
 
                 </div>
 
-                <section className="buttons">
-                <div className='lost_button'>
-                    <NavLink exact={true} to="/LostPets"> I lost my pet!   <img src={LogoPet} className="logo_pets"/></NavLink>
-                </div>
-                <div className="found_button">
-                    <NavLink exact={true} to="/FoundPets" activeStyle={{color: ""}}>I found a pet!</NavLink>
-                </div>
-
 
             </section>
 
-
+            <section>
+                <NavLink exact={true} to="/LostPets" style={{ textDecoration: "none", color: "green" }}>I lost my pet!</NavLink>
+                <NavLink exact={true} to="/FoundPets" activeStyle={{color: ""}}>I found a pet!</NavLink>
             </section>
-
-
 
             <section className="about">
-                <div className="about-text">Our fluffy space for lovers, admirers, dads and moms of our four-legged, winged, tailed guys.</div>
+                <p className="about-text">Our fluffy space for lovers, admirers, dads and moms of our four-legged, winged, tailed guys.</p>
             </section>
 
 

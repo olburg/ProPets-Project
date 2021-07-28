@@ -6,21 +6,21 @@ import "react-fontawesome"
 // import "components/fonts/fonts.css"
 import './index.css';
 import { BrowserRouter } from "react-router-dom";
+import { store } from "./store/store";
 
 
-
-// import { Provider } from "react-redux";
+import { Provider } from "react-redux";
 
 import Pages from "./layout/Pages";
 
 
 ReactDOM.render(
-    // <Provider store={}>
+    <Provider store={store}>
         <BrowserRouter>
             <Pages />
 
         </BrowserRouter>,
-    // </Provider>,
+ </Provider>,
 
   document.getElementById('root')
 );

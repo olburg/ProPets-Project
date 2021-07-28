@@ -20,7 +20,7 @@ const LostPets = () => {
 
 
             <section>
-                <Header />
+                <HeaderWhite />
             </section>
 
             <section className="d-flex row-cols-lg-3 row-cols-md-3">
@@ -30,7 +30,7 @@ const LostPets = () => {
 
 
                 <section>
-                    <h3><span>Lost pets</span></h3>
+                    <div><span>Lost pets</span></div>
 
                     <div>
                         Would you like to publish a post? <NavLink exact={true} to="/signIn">Join</NavLink> the our community!
@@ -81,8 +81,8 @@ const LostPets = () => {
                     </div>
                 </section>
 
-                <section className="nav-right">
-                    <div></div>
+                <section>
+                    <div>Background: green</div>
                 </section>
             </section>
 
