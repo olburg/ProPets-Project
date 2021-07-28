@@ -2,7 +2,6 @@ import React from "react";
 import HeaderWhite from "./HeaderWhite";
 import {NavLink} from "react-router-dom";
 import ProfileLogout from "./ProfileLogout";
-import Navigation from "./Navigation";
 
 
 const Profile = ()=> {
@@ -15,8 +14,8 @@ const Profile = ()=> {
 
             <section className="d-flex row-cols-lg-3 row-cols-md-3">
 
-                <section className="nav-right">
-                    <Navigation/>
+                <section>
+                    {/*<Navigation/>*/}
                 </section>
 
                 <section className="container">
@@ -102,7 +101,7 @@ const Profile = ()=> {
 
                 </section>
 
-                <section className="nav-left">
+                <section>
                     <ProfileLogout />
                 </section>
 

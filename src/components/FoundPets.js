@@ -2,7 +2,8 @@ import React from "react";
 
 
 import { NavLink } from "react-router-dom";
-
+import Header from "./Header"
+// import Logo from "../images/Group1.svg"
 import BigDog from "../images/BigDog.png"
 import Puppy from "../images/Puppy.png"
 import Dog from "../images/Dog.png"
@@ -10,7 +11,6 @@ import Cat from "../images/Cat.png"
 import Parrot from "../images/Parrot.png"
 import Cat1 from "../images/Cat1.png"
 import Nav from "./Nav";
-import HeaderWhite from "./HeaderWhite";
 
 
 
@@ -19,7 +19,7 @@ const FoundPets = () => {
 
         <section>
             <div>
-                <HeaderWhite />
+                <Header />
 
             </div>
 
@@ -80,8 +80,8 @@ const FoundPets = () => {
                     </div>
                 </section>
 
-                <section className="nav-right">
-
+                <section>
+                    <div>Background: green</div>
                 </section>
 
             </section>

@@ -7,23 +7,28 @@ import PostPhoto from "../images/PostPhoto.png"
 import {NavLink} from "react-router-dom";
 import HeaderWhite from "./HeaderWhite";
 import ProfileLogout from "./ProfileLogout";
-import Navigation from "./Navigation";
+import MainNav from "./MainNav"
+import Pages from "../layout/Pages";
 
 
 
 const Home = ( )=> {
     return(
         <section>
+
             <section>
                  <HeaderWhite />
-            </section>
-
+             </section>
 
             <section className="d-flex row-cols-lg-3 row-cols-md-3">
-                <section className="nav-right">
-                    <Navigation />
+
+                <section>
+                    <MainNav />
+                    
                 </section>
 
+                
+                <section></section>
 
                 <section >
 
@@ -54,7 +59,7 @@ const Home = ( )=> {
 
                 </section>
 
-                <section className="nav-left">
+                <section>
                     <ProfileLogout/>
                 </section>
 
