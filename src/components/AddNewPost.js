@@ -38,8 +38,8 @@ const AddNewPost = () => {
                                 <label className=" col-form-label">Text <br/> up to 1500 char</label>
                             </div>
                             <div className="">
-                                <input type="text" className="form-control" id="exampleFormControlTextarea1" rows="10" name="title"
-                                       placeholder="Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                <textarea type="text" className="form-control input-comment" id="exampleFormControlTextarea1" name="title"
+                                          value="Lorem Ipsum is simply dummy text of the printing and typesetting industry.
                                Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown
                                printer took a galley of type and scrambled it to make a type specimen book. It has survived not
                                 only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.

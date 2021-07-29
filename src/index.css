@@ -1,10 +1,7 @@
 
 
 
-* {
-  /*margin: 0;*/
-  font-family: "Monserrat", sans-serif !important;
-}
+
 
 body {
   width: 100%;
@@ -14,7 +11,7 @@ body {
   /*  sans-serif;*/
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Monserrat", sans-serif !important;
+  font-family: "Montserrat", sans-serif;
 
 }
 
@@ -30,9 +27,20 @@ textarea {
   color: #bababa;
 }
 
+.input-comment {
+  height: 300px ;
+}
+
 exampleFormControlTextarea1 {
   font-family: "Monserrat", sans-serif;
 
+}
+
+a {
+  margin-left: 0;
+  text-decoration: none;
+  color: #393939;
+  font-weight: normal;
 }
 
 
@@ -43,14 +51,14 @@ exampleFormControlTextarea1 {
 }
 
 .header-green {
-   background-color: #06B2BB;
-   width: 100%;
-   height: 90px;
-   padding-top: 30px;
-   /*padding-left: 50px;*/
-   /*padding-right: 50px;*/
+  background-color: #06B2BB;
+  width: 100%;
+  height: 90px;
+  padding-top: 30px;
+  /*padding-left: 50px;*/
+  /*padding-right: 50px;*/
   margin: 0 auto;
- }
+}
 
 .header-white {
   /*color: #FFFFFF;*/
@@ -115,7 +123,7 @@ exampleFormControlTextarea1 {
   color: #06B2BB;
 
   font-weight: bold;
-  font-size: 16px;
+  font-size: 24px;
   margin-top: 20px;
 }
 
@@ -153,9 +161,7 @@ exampleFormControlTextarea1 {
 
 
 
-/*.active {*/
-/*  margin-left: 0;*/
-/*}*/
+
 
 .welcome-wrapper {
   position: relative;
@@ -200,13 +206,27 @@ exampleFormControlTextarea1 {
   /*font-family: Monserrat sans-serif !important;*/
 }
 
+.service-list {
+  font-family: Monserrat, sans-serif medium !important;
+  font-size: 18px;
+  text-align: left;
+  text-decoration-color: #06B2BB;
+}
+
 .wanttojoin {
   display: block;
   padding-top: 600px;
   padding-left: 50px;
 }
 
+.wanttojoin-footer {
+  display: block;
+
+
+}
+
 .dog-wrapper {
+  font-size: 30px;
   width: 60%;
   padding-top: 10px;
 }
@@ -242,7 +262,7 @@ exampleFormControlTextarea1 {
   /*width: 544px;*/
   /*height: 95px;*/
 
-text-align: right;
+  text-align: right;
 
 
 
@@ -259,9 +279,10 @@ text-align: right;
   /*left: -1510px;*/
   margin-left: -250px;
 
-  padding: 30px;
+  padding: 30px 150px;
+
   font-size: 40px;
-  font-family: Monserrat sans-serif;
+  /*font-family: Monserrat sans-serif;*/
   font-weight: bold;
   text-decoration: none;
 
@@ -269,10 +290,13 @@ text-align: right;
   margin-bottom: 20px;
   background-color: #FA5456;
   border-radius: 60px;
+
+  position: relative;
 }
 
 .lost_button:hover {
-  background-color: yellow;
+  background-color: #FFD219;
+  color: #393939;
 }
 
 .found_button {
@@ -282,45 +306,37 @@ text-align: right;
   /*height: 93px;*/
   font-size: 40px;
   padding: 30px;
-  font-family: Monserrat sans-serif;
+  /*font-family: "Monserrat", sans-serif;*/
   font-weight: bold;
   background-color: #06B2BB;
   border-radius: 60px;
-
   margin-left: -250px;
 }
 
 .logo_pets {
-  /*top: 459px;*/
-  /*left: 441px;*/
-  width: 79px;
-  height: 80px;
-
-
+  position: absolute;
+  /*top: 49px;*/
+  left: 700px;
+  width: 89px;
+  height: 100px;
 }
 
 .about {
   background-color: #06B2BB;
   color: white;
-  /*width: 70%;*/
   height: 260px;
-
+  text-align: center;
   padding: 30px 30px;
-
 }
 
 .about-text {
-  display: block;
-  font-family: Monserrat, sans-serif !important;
+  display: inline-block;
   font-size: 42px;
-  margin: 0 auto;
-  width: 750px;
+  width: 70%;
   text-align: center;
-
-
+  padding: 0 40px 0;
+  margin-top: 40px;
 }
-
-
 
 .nav {
   position: relative;
@@ -381,7 +397,7 @@ text-align: right;
   color: #FFFFFF;
   font-family: "Monserrat", SansSerif, sans-serif;
 
-text-decoration: none;
+  text-decoration: none;
   text-align: left;
 
 }
@@ -418,4 +434,8 @@ text-decoration: none;
 
 .footer {
   background-color: #06B2BB;
+  width: 100%;
+  height: 70px;
+  padding: 30px 30px;
+  margin-bottom: 50px;
 }
