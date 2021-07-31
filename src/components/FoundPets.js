@@ -11,6 +11,8 @@ import Cat from "../images/Cat.png"
 import Parrot from "../images/Parrot.png"
 import Cat1 from "../images/Cat1.png"
 import Nav from "./Nav";
+import HeaderWhite from "./HeaderWhite";
+import HeaderStart from "./HeaderStart";
 
 
 
@@ -19,7 +21,7 @@ const FoundPets = () => {
 
         <section>
             <div>
-                <Header />
+                <HeaderStart />
 
             </div>
 
@@ -40,7 +42,7 @@ const FoundPets = () => {
                             <h3>Big dog</h3>
                             <p>Oliver Platy, Berlin</p>
                             <img src={BigDog} alt="#"/>
-                            <a href="/FoundCat">view details>></a>
+                            <a href="#">view details>></a>
                         </div>
                         <div>
                             <h3>Puppy</h3>
@@ -80,8 +82,8 @@ const FoundPets = () => {
                     </div>
                 </section>
 
-                <section>
-                    <div>Background: green</div>
+                <section className="nav-right">
+                    <div></div>
                 </section>
 
             </section>

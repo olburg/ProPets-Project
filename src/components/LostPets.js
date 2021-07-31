@@ -10,6 +10,7 @@ import Cat1 from "../images/Cat1.png";
 import Header from "./Header";
 import Nav from "./Nav";
 import HeaderWhite from "./HeaderWhite";
+import HeaderStart from "./HeaderStart";
 
 
 
@@ -20,10 +21,10 @@ const LostPets = () => {
 
 
             <section>
-                <HeaderWhite />
+                <HeaderStart />
             </section>
 
-            <section className="d-flex row-cols-lg-3 row-cols-md-3">
+            <section className="container-fluid d-flex row-cols-lg-3 row-cols-md-3">
                 <section>
                     <Nav />
                 </section>
@@ -81,8 +82,8 @@ const LostPets = () => {
                     </div>
                 </section>
 
-                <section>
-                    <div>Background: green</div>
+                <section className="nav-right">
+                    <div></div>
                 </section>
             </section>
 
