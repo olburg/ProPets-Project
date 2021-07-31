@@ -8,6 +8,9 @@ import { connect } from "react-redux";
 import { addPost } from "../store/actions/posts_actions";
 import Navigation from "./Navigation";
 import {NavLink} from "react-router-dom";
+import {faPaw} from "@fortawesome/free-solid-svg-icons";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import Puppy from "../images/Puppy.png"
 
 
 const  AddPost = ({ activePerson, addLocalPost, setAddPostMode }) => {
@@ -38,7 +41,14 @@ const  AddPost = ({ activePerson, addLocalPost, setAddPostMode }) => {
                     <Navigation />
                 </section>
 
-                <section className="container">
+                <section className="w-auto">
+
+
+
+
+
+
+
                     <div className="post-wrapper">
                         <div className="header-text">Your new post! Simply text, add photo and publish.</div>
                     </div>
@@ -55,6 +65,7 @@ const  AddPost = ({ activePerson, addLocalPost, setAddPostMode }) => {
                                        className="form-control "
                                        name="title"
                                        placeholder="The quick, brown fox jumps"
+                                       style={ { color: "#bababa" } }
                                        onChange={changeFieldHandle} />
                             </div>
 
@@ -76,7 +87,7 @@ const  AddPost = ({ activePerson, addLocalPost, setAddPostMode }) => {
                                 distribution of letters, as opposed to using ‘Content here, content here’, making it look like readable
                                 English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text,
                                 and a search for ‘lorem ipsum’ will uncover many web sites still in their infancy. Various versions have
-                                evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)."
+                                evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like)." style={ { color: "#bababa" } }
                                        onChange={changeFieldHandle}/>
 
                             </div>
@@ -86,27 +97,43 @@ const  AddPost = ({ activePerson, addLocalPost, setAddPostMode }) => {
                             </div>
                             <div className="">
                                 <input type="text"
-                                       className="form-control "
+                                       className="form-control"
                                        name="photo"
                                        placeholder="photo url"
+                                       style={ { color: "#bababa" } }
                                        onChange={changeFieldHandle}
                                 />
                             </div>
-                            <button type="submit">Add Post</button>
+
                         </form>
 
-                        <div  > <NavLink exact={true} to="/Home"> <button className="btn btn-green w-50" >Publish </button> </NavLink></div>
+
+                        <div className="d-flex flex-row justify-content-between mt-3">
+                            <div className="d-flex flex-row">
+                                <img src={Puppy} alt="" className="photo-avatar"/>
+                                <div className="header-text" style={ {margin: "0", marginLeft: "10px"} }>John Goodboy</div>
+                            </div>
+
+                            <NavLink exact={true} to="/Home"><div className="addnewpost"><FontAwesomeIcon icon={faPaw} />  Publish</div></NavLink>
+
+                            {/*<div  > <NavLink exact={true} to="/Home"> <button className="btn btn-green w-50" >Publish </button> </NavLink></div>*/}
+
+                        </div>
+
+
+
+
 
                     </div>
                 </section>
 
-                <section className="nav-left">
-                    <ProfileLogout />
-                </section>
+
 
             </section>
 
-
+            <section className="nav-left">
+                <ProfileLogout />
+            </section>
 
 
         </section>

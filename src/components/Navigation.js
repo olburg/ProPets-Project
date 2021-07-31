@@ -1,7 +1,15 @@
 import React, {Fragment} from "react";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {faBorderNone, faHome, faPaw, faSearch} from "@fortawesome/free-solid-svg-icons";
+import {
+    faDog,
+    faHome,
+    faHotel,
+    faPaw,
+    faSearch, faStethoscope,
+    faWalking
+} from "@fortawesome/free-solid-svg-icons";
+
 
 
 
@@ -12,40 +20,50 @@ const Navigation = () => {
 
         <section className="nav-wrapper">
             <section className="nav-item-new services">
-                <NavLink exact={true} to="/Home" style={ {textDecoration: "none", color: "white", fontSize: "20px", fontFamily: "Montserrat, sans-serif"} }><FontAwesomeIcon icon={faHome} />    Home</NavLink>
+                <NavLink exact={true} to="/Home" style={ {textDecoration: "none", color: "white", fontSize: "20px", fontFamily: "Montserrat"} }><FontAwesomeIcon icon={faHome} />    Home</NavLink>
             </section>
 
             <section className="nav-item-new">
-            <NavLink exact={true} to="/HomeLost" style={ {textDecoration: "none", color: "white", fontSize: "20px", fontFamily: "Montserrat, sans-serif"} }><FontAwesomeIcon icon={faSearch} />    Lost</NavLink>
+            <NavLink exact={true} to="/HomeLost" style={ {textDecoration: "none", color: "white", fontSize: "20px", fontFamily: "Montserrat"} }><FontAwesomeIcon icon={faSearch} />    Lost</NavLink>
             </section>
 
 
-            <section className="nav-item-new">
-                <NavLink exact={true} to="/HomeFound" style={ {textDecoration: "none", color: "white", fontSize: "20px", fontFamily: "Montserrat, sans-serif"} }><FontAwesomeIcon icon={faPaw} />    Found</NavLink>
+            <section className="nav-item-new mb-3">
+                <NavLink exact={true} to="/HomeFound" style={ {textDecoration: "none", color: "white", fontSize: "20px", fontFamily: "Montserrat"} } ><FontAwesomeIcon icon={faPaw} />    Found</NavLink>
             </section>
 
 
-            <section className="services">
-                <div style={ {textDecoration: "none", color: "white", fontSize: "20px", fontFamily: "Montserrat, sans-serif"} }>SERVICES</div>
-                <hr style={ {color: "white"} }/>
-                <ul >
-                    <div className="nav-item-new" style={ {textDecoration: "none", color: "white", fontSize: "20px", fontFamily: "Montserrat, sans-serif"} }>
-                        Hotel
-                    </div>
+            <div style={ {textDecoration: "none", color: "white", fontSize: "20px", fontFamily: "Montserrat"} }>SERVICES</div>
+            <hr style={ {color: "white"} }/>
+            <div className="nav-item-new">
+                <div className="nav-item-new" style={ {textDecoration: "none", color: "white", fontSize: "20px", fontFamily: "Montserrat"} }><FontAwesomeIcon icon={faHotel} style={ {marginRight: "10px"} }/>
+                      Hotels
+                </div>
 
-                    <div className='nav-item-new' style={ {textDecoration: "none", color: "white", fontSize: "20px", fontFamily: "Montserrat, sans-serif"} }>
-                        Walking
-                    </div>
+                <NavLink exact={true} to="/Walking" className='nav-item-new' style={ {textDecoration: "none", color: "white", fontSize: "20px", fontFamily: "Montserrat"} }><FontAwesomeIcon icon={faWalking} style={ {marginRight: "10px"} }/>
+                         Walking
+                </NavLink>
 
-                    <div className='nav-item-new' style={ {textDecoration: "none", color: "white", fontSize: "20px", fontFamily: "Montserrat, sans-serif"} }>
-                        VetHelp
-                    </div>
+                <NavLink exact={true} to="/Fostering" className='nav-item-new' style={ {textDecoration: "none", color: "white", fontSize: "20px", fontFamily: "Montserrat"} }><FontAwesomeIcon icon={faDog} style={ {marginRight: "10px"} }/>
+                    Fostering
+                </NavLink>
 
-                </ul>
 
-                <hr style={ {color: "white", fontSize: "20px"} }/>
+                <NavLink exact={true} to="/VetHelp" className='nav-item-new' style={ {textDecoration: "none", color: "white", fontSize: "20px", fontFamily: "Montserrat"} }><FontAwesomeIcon icon={faStethoscope} style={ {marginRight: "10px"} }/>
+                    VetHelp
+                </NavLink>
 
-            </section>
+
+
+
+
+            </div>
+
+            <hr style={ {color: "white", fontSize: "20px"} }/>
+
+
+
+
 
 
 

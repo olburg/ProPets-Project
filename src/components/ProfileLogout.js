@@ -1,5 +1,7 @@
 import React from "react";
 import {NavLink} from "react-router-dom";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faPaw, faSignOutAlt} from "@fortawesome/free-solid-svg-icons";
 
 
 const ProfileLogout = () => {
@@ -7,18 +9,28 @@ const ProfileLogout = () => {
 
         <section>
 
+            <div className="container" style={ {color: "white"} }>
+                <div style={ {color: "white", marginBottom: "10px"}  }>
+                    <hr/>
+                    <NavLink exact={true} to="/Profile">
+                        {/*<img src="" alt="#"/>*/}
+                        <p>Anna Smith</p>
+                    </NavLink>
+                    <hr/>
+                </div>
 
-            <div>
-                <NavLink exact={true} to="/Profile">
-                    {/*<img src="" alt="#"/>*/}
-                    <p>Anna Smith</p>
-                </NavLink>
+
+                <div>
+
+                    <NavLink exact={true} to="/"><div ><FontAwesomeIcon icon={faSignOutAlt} />LogOut</div></NavLink>
+
+                </div>
             </div>
 
 
-            <button type="submit" className="btn btn-success w-40">
-                <NavLink exact={true} to="/">LogOut</NavLink>
-            </button>
+
+
+
 
 
         </section>

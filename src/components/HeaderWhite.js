@@ -14,7 +14,12 @@ const HeaderWhite = () => {
             <div className="header-green-wrapper">
 
                 <div className="header-logo-green"><NavLink exact={true} to="/"><img src={LogoGreen} alt="#"/></NavLink></div>
-                <div className="header-button-signin"><NavLink exact={true} to="/AddNewPost"><div className="addnewpost"> + Add new</div></NavLink></div>
+
+                <div className="d-flex frow">
+                    <div className="header-button-signin"><NavLink exact={true} to="/AddNewPost"><div className="addnewpost"> + Add new</div></NavLink></div>
+                </div>
+
+
 
             </div>
         </div>

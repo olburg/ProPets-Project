@@ -23,14 +23,14 @@ const FoundCat = () => {
 
                 <section>
                     <div>
-                        <h3>Lost pet: <span>Cat </span> | Schloss Str, Potsdam</h3>
+                        <h3 className="header-text">Found pet: <span style={ {color: "black"} }>Cat </span> | Schloss Str, Potsdam</h3>
                     </div>
                     <div>
                         <img src={Cat} alt=""/>
                     </div>
 
                     <div>
-                        <h4>Cat</h4>
+                        <h4 className="header-text">Cat</h4>
                         <p>Dec 12, 2019</p>
                     </div>
 

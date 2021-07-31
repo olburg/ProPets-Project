@@ -40,7 +40,7 @@ const HomeFound = () => {
                             <h3>Big dog</h3>
                             <p>Oliver Platy, Berlin</p>
                             <img src={BigDog} alt="#"/>
-                            <a href="#">view details>></a>
+                            <a href="">view details>></a>
                         </div>
                         <div>
                             <h3>Puppy</h3>

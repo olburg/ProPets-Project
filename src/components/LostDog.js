@@ -1,7 +1,7 @@
 import React from "react"
 
 import Nav from "./Nav";
-import Cat from "../images/Cat.png";
+import BigDog from "../images/BigDog.png";
 
 import HeaderStart from "./HeaderStart";
 
@@ -23,14 +23,14 @@ const FoundCat = () => {
 
                 <section>
                     <div>
-                        <h3>Lost pet: <span>Cat </span> | Schloss Str, Potsdam</h3>
+                        <h3 className="header-text">Lost pet: <span>Dog, Golden retriever </span> | Schloss Str, Potsdam</h3>
                     </div>
                     <div>
-                        <img src={Cat} alt=""/>
+                        <img src={BigDog} alt=""/>
                     </div>
 
                     <div>
-                        <h4>Cat</h4>
+                        <h4 className="header-text">Dog</h4>
                         <p>Dec 12, 2019</p>
                     </div>
 

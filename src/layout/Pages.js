@@ -17,6 +17,12 @@ import HomeLost from "../components/HomeLost";
 import HomeLostDog from "../components/HomeLostDog";
 import AddNewFound from "../components/AddNewFound";
 import AddNewLost from "../components/AddNewFound";
+import Walking from "../components/services/Walking";
+import WalkingPost from "../components/services/WalkingPost";
+import Fostering from "../components/services/Fostering";
+import FosteringPost from "../components/services/FosteringPost";
+import VetHelp from "../components/services/VetHelp";
+import VetHelpPost from "../components/services/VetHelpPost";
 
 
 
@@ -50,6 +56,15 @@ const Pages = () => {
 
             <Route exact={true} path="/AddNewFound" component={AddNewFound} />
             <Route exact={true} path="/AddNewLost" component={AddNewLost} />
+
+            <Route exact={true} path="/Walking" component={Walking} />
+            <Route exact={true} path="/WalkingPost" component={WalkingPost} />
+            <Route exact={true} path="/Fostering" component={Fostering} />
+            <Route exact={true} path="/FosteringPost" component={FosteringPost} />
+            <Route exact={true} path="/VetHelp" component={VetHelp} />
+            <Route exact={true} path="/VetHelpPost" component={VetHelpPost} />
+
+
 
 
 

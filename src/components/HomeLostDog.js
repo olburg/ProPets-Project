@@ -1,17 +1,18 @@
 import React from "react";
 
-import Nav from "./Nav";
+
 
 import BigDog from "../images/BigDog.png"
 import ProfileLogout from "./ProfileLogout";
 import Navigation from "./Navigation";
-import HeaderWhite from "./HeaderWhite";
+
+import HeaderWhiteNew from "./HeaderWhiteNew";
 
 const LostDog = () => {
     return (
         <section>
             <section>
-                <HeaderWhite />
+                <HeaderWhiteNew />
             </section>
 
             <section className="d-flex row-cols-lg-3 row-cols-md-3">

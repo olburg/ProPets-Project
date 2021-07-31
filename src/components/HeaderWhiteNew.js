@@ -13,7 +13,7 @@ const HeaderWhiteNew = () => {
         <div className="header-white body">
             <div className="header-green-wrapper">
 
-                <div className="header-logo-green"><NavLink exact={true} to="/"><img src={LogoGreen} alt="#"/></NavLink></div>
+                <div className="header-logo-green"><NavLink exact={true} to="/Home"><img src={LogoGreen} alt="#"/></NavLink></div>
 
 
                 <div className="d-flex frow">

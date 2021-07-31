@@ -28,7 +28,7 @@ const Home = ( )=> {
                 <section >
 
                     <div>
-                        <img src={Puppy} alt=""/>
+                        <img src={Puppy} alt="" className="photo-avatar"/>
                         <h5>John Goodboy</h5>
                         <p>6 April, 10:15</p>
                         <p>The quick, brown fox jumps over a lazy dog. …more>></p>
@@ -36,7 +36,7 @@ const Home = ( )=> {
                     </div>
 
                     <div>
-                        <img src={BigDog} alt=""/>
+                        <img src={BigDog} alt="" className="photo-avatar"/>
                         <h5>Uncle Sam</h5>
                         <p>5 April, 14:00</p>
                         <img src={PostPhoto} alt=""/>
@@ -45,7 +45,7 @@ const Home = ( )=> {
                     </div>
 
                     <div>
-                        <img src={Puppy} alt=""/>
+                        <img src={Puppy} alt="" className="photo-avatar"/>
                         <h5>John Goodboy</h5>
                         <p>6 April, 10:15</p>
                         <p>The quick, brown fox jumps over a lazy dog. </p>
