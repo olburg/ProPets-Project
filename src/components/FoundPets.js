@@ -13,71 +13,91 @@ import Cat1 from "../images/Cat1.png"
 import Nav from "./Nav";
 import HeaderWhite from "./HeaderWhite";
 import HeaderStart from "./HeaderStart";
+import {faMapMarker} from "@fortawesome/free-solid-svg-icons";
 
 
 
 const FoundPets = () => {
     return (
 
-        <section>
+        <section className="container-fluid" style={ {width: "1366px"}  }>
             <div>
                 <HeaderStart />
-
             </div>
 
             <section className="d-flex row-cols-lg-3 row-cols-md-3">
-                <section>
-                    <Nav />
+
+                <section className="d-flex flex-row col-3" >
+                    <div className="col-4" >
+                        <Nav />
+                    </div>
+
                 </section>
 
-                <section>
-                    <h3><span>Found pets</span></h3>
+                <section className="col-lg-6">
+                    <div className="header-text">Found pets</div>
+                    <hr/>
 
-                    <div>
-                        Would you like to publish a post? <NavLink exact={true} to="/signIn">Join</NavLink> the our community!
+                    <div style={ {fontSize: "12px", marginBottom: "30px" } }>
+                        Would you like to publish a post? <NavLink exact={true} to="/signIn"><span style={{color: "#06B2BBCC"}}>JOIN</span></NavLink> the our community!
                     </div>
 
-                    <div className="frow">
-                        <div>
-                            <h3>Big dog</h3>
-                            <p>Oliver Platy, Berlin</p>
+                    <div className="frow card-body">
+                        <div className=" ">
+                            <h4 className="card-title">Big dog</h4>
+                            <div>Oliver Platy, Berlin   </div>
                             <img src={BigDog} alt="#"/>
-                            <a href="#">view details>></a>
+                            <div>
+                                <a href="#">view details>></a>
+                            </div>
+
                         </div>
                         <div>
-                            <h3>Puppy</h3>
+                            <h4>Puppy</h4>
                             <p>Schloss Str, Potsdam</p>
                             <img src={Puppy} alt="#"/>
-                            <a href="">view details>></a>
+                            <div>
+                                <a href="#">view details>></a>
+                            </div>
                         </div>
                         <div>
-                            <h3>Dog</h3>
+                            <h4>Dog</h4>
                             <p>Schloss Str, Potsdam</p>
                             <img src={Dog} alt="#"/>
-                            <a href="">view details>></a>
+                            <div>
+                                <a href="#">view details>></a>
+                            </div>
                         </div>
 
                     </div>
 
                     <div className="frow">
                         <div>
-                            <h3>Cat</h3>
-                            <p>Oliver Platy, Berlin</p>
+                            <h4>Cat</h4>
+
+                                <div> Oliver Platy, Berlin</div>
+
                             <img src={Cat} alt="#"/>
-                            <NavLink exact={true} to="/FoundCat">view details>></NavLink>
-                            {/*<a href="">view details>></a>*/}
+                            <div>
+                                <NavLink exact={true} to="/FoundCat">view details>></NavLink>
+                            </div>
+
                         </div>
                         <div>
-                            <h3>Parrot</h3>
+                            <h4>Parrot</h4>
                             <p>Schloss Str, Potsdam</p>
                             <img src={Parrot} alt="#"/>
-                            <a href="">view details>></a>
+                            <div>
+                                <a href="#">view details>></a>
+                            </div>
                         </div>
                         <div>
-                            <h3>Cat</h3>
+                            <h4>Cat</h4>
                             <p>Schloss Str, Potsdam</p>
                             <img src={Cat1} alt="#"/>
-                            <a href="">view details>></a>
+                            <div>
+                                <a href="#">view details>></a>
+                            </div>
                         </div>
                     </div>
                 </section>

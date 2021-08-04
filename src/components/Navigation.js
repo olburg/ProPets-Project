@@ -16,10 +16,10 @@ import {
 const Navigation = () => {
 
     return (
-        <section  >
+        <section className="nav-wrapper" >
 
-        <section className="nav-wrapper">
-            <section className="nav-item-new services">
+        <section >
+            <section className="nav-item-new ">
                 <NavLink exact={true} to="/Home" style={ {textDecoration: "none", color: "white", fontSize: "20px", fontFamily: "Montserrat"} }><FontAwesomeIcon icon={faHome} />    Home</NavLink>
             </section>
 
@@ -33,31 +33,30 @@ const Navigation = () => {
             </section>
 
 
-            <div style={ {textDecoration: "none", color: "white", fontSize: "20px", fontFamily: "Montserrat"} }>SERVICES</div>
-            <hr style={ {color: "white"} }/>
-            <div className="nav-item-new">
-                <div className="nav-item-new" style={ {textDecoration: "none", color: "white", fontSize: "20px", fontFamily: "Montserrat"} }><FontAwesomeIcon icon={faHotel} style={ {marginRight: "10px"} }/>
-                      Hotels
+            <div className="services">
+                <div className="">
+                    <div className="nav-item-new">
+                        <div style={ {textDecoration: "none", color: "white", fontSize: "20px", fontFamily: "Montserrat"} }>SERVICES</div>
+                        <hr style={ {color: "white", fontSize: "20px", width: "250px"} }/>
+                    </div>
+                    <div className="nav-item-new">
+                        <div className="nav-item-new" style={ {textDecoration: "none", color: "white", fontSize: "20px", fontFamily: "Montserrat"} }><FontAwesomeIcon icon={faHotel} style={ {marginRight: "10px"} }/>Hotels</div>
+                    </div>
+
+                    <div className="nav-item-new">
+                        <NavLink exact={true} to="/Walking" className='nav-item-new' style={ {textDecoration: "none", color: "white", fontSize: "20px", fontFamily: "Montserrat"} }><FontAwesomeIcon icon={faWalking} style={ {marginRight: "10px"} }/>Walking</NavLink>
+                    </div>
+
+                    <div className="nav-item-new">
+                        <NavLink exact={true} to="/Fostering" className='nav-item-new' style={ {textDecoration: "none", color: "white", fontSize: "20px", fontFamily: "Montserrat"} }><FontAwesomeIcon icon={faDog} style={ {marginRight: "10px"} }/>Fostering</NavLink>
+                    </div>
+
+                    <div className="nav-item-new">
+                        <NavLink exact={true} to="/VetHelp" className='nav-item-new' style={ {textDecoration: "none", color: "white", fontSize: "20px", fontFamily: "Montserrat"} }><FontAwesomeIcon icon={faStethoscope} style={ {marginRight: "10px"} }/>VetHelp</NavLink>
+                    </div>
                 </div>
-
-                <NavLink exact={true} to="/Walking" className='nav-item-new' style={ {textDecoration: "none", color: "white", fontSize: "20px", fontFamily: "Montserrat"} }><FontAwesomeIcon icon={faWalking} style={ {marginRight: "10px"} }/>
-                         Walking
-                </NavLink>
-
-                <NavLink exact={true} to="/Fostering" className='nav-item-new' style={ {textDecoration: "none", color: "white", fontSize: "20px", fontFamily: "Montserrat"} }><FontAwesomeIcon icon={faDog} style={ {marginRight: "10px"} }/>
-                    Fostering
-                </NavLink>
-
-
-                <NavLink exact={true} to="/VetHelp" className='nav-item-new' style={ {textDecoration: "none", color: "white", fontSize: "20px", fontFamily: "Montserrat"} }><FontAwesomeIcon icon={faStethoscope} style={ {marginRight: "10px"} }/>
-                    VetHelp
-                </NavLink>
-
-
-
-
-
             </div>
+
 
             <hr style={ {color: "white", fontSize: "20px"} }/>
 

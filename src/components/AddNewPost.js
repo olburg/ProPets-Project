@@ -30,30 +30,27 @@ const  AddPost = ({ activePerson, addLocalPost, setAddPostMode }) => {
 
     return (
 
-        <section>
+        <section className="container-fluid" style={ {width: "1336px"}  }>
             <section>
                 <HeaderWhite />
             </section>
 
             <section className="d-flex row row-cols-lg-3 row-cols-md-3" >
 
-                <section className="nav-right">
-                    <Navigation />
+                <section className="d-flex flex-row col-3">
+                    <div className="nav-right">
+                        <Navigation />
+                    </div>
                 </section>
 
-                <section className="w-auto">
-
-
-
-
-
-
+                <section className="col-lg-6">
 
                     <div className="post-wrapper">
                         <div className="header-text">Your new post! Simply text, add photo and publish.</div>
+                        <hr />
                     </div>
 
-                    <div className="container">
+                    <div className="">
                         <form onSubmit={() => {
                             addLocalPost(formData)
                         }} className="d-flex row">
@@ -105,10 +102,7 @@ const  AddPost = ({ activePerson, addLocalPost, setAddPostMode }) => {
                                 />
                             </div>
 
-                        </form>
-
-
-                        <div className="d-flex flex-row justify-content-between mt-3">
+                            <div className="d-flex flex-row justify-content-between mt-3">
                             <div className="d-flex flex-row">
                                 <img src={Puppy} alt="" className="photo-avatar"/>
                                 <div className="header-text" style={ {margin: "0", marginLeft: "10px"} }>John Goodboy</div>
@@ -116,24 +110,23 @@ const  AddPost = ({ activePerson, addLocalPost, setAddPostMode }) => {
 
                             <NavLink exact={true} to="/Home"><div className="addnewpost"><FontAwesomeIcon icon={faPaw} />  Publish</div></NavLink>
 
-                            {/*<div  > <NavLink exact={true} to="/Home"> <button className="btn btn-green w-50" >Publish </button> </NavLink></div>*/}
+
 
                         </div>
 
-
+                        </form>
 
 
 
                     </div>
                 </section>
 
-
-
+                <section className="nav-right">
+                    <ProfileLogout />
+                </section>
             </section>
 
-            <section className="nav-left">
-                <ProfileLogout />
-            </section>
+
 
 
         </section>

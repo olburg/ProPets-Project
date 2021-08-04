@@ -1,6 +1,6 @@
 import React from "react"
 
-import Nav from "./Nav";
+
 import Cat from "../images/Cat.png";
 import ProfileLogout from "./ProfileLogout";
 
@@ -10,7 +10,7 @@ import Navigation from "./Navigation";
 
 const HomeFoundCat = () => {
     return (
-        <section>
+        <section className="container-fluid" style={ {width: "1336px"}  }>
 
             <div>
                 <HeaderWhiteNew />
@@ -18,14 +18,23 @@ const HomeFoundCat = () => {
 
 
             <section className="d-flex row-cols-lg-3 row-cols-md-3">
-                <section className="nav-right">
-                    <Navigation />
+
+                <section className="d-flex flex-row col-3">
+                    <div className="nav-right">
+                        <Navigation />
+                    </div>
                 </section>
 
-                <section>
-                    <div>
-                        <h3>Found pet: <span>Cat</span> | Schloss Str, Potsdam</h3>
-                    </div>
+
+
+
+                <section className="col-lg-6">
+                     <div>
+                         <div className="header-text">Found pet: <span>Cat</span> | Schloss Str, Potsdam</div>
+                         <hr/>
+                     </div>
+
+
                     <div>
                         <img src={Cat} alt=""/>
                     </div>

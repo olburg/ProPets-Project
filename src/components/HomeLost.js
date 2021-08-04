@@ -16,24 +16,26 @@ import Navigation from "./Navigation";
 
 
 
-const LostPets = () => {
+const HomeLost = () => {
     return (
 
-        <section>
-
-
-            <section>
+        <section className="container-fluid" style={ {width: "1336px"}  }>
+            <div>
                 <HeaderWhiteNew />
-            </section>
+            </div>
 
             <section className="d-flex row-cols-lg-3 row-cols-md-3">
-                <section className="nav-right">
-                    <Navigation />
+
+                <section className="d-flex flex-row col-3">
+                    <div className="nav-right">
+                        <Navigation />
+                    </div>
                 </section>
 
 
-                <section>
-                    <div><span>Lost pets</span></div>
+                <section className="col col-6">
+                    <div className="header-text">Lost pets</div>
+                    <hr/>
 
 
                     <div className="frow">
@@ -41,19 +43,26 @@ const LostPets = () => {
                             <h4>Uncle Sam</h4>
                             <p>Oliver Platy, Berlin</p>
                             <img src={BigDog} alt="#"/>
-                            <NavLink exact={true} to="/HomeLostDog">view details>></NavLink>
+                            <div>
+                                <NavLink exact={true} to="/HomeLostDog">view details>></NavLink>
+                            </div>
+
                         </div>
                         <div>
                             <h4>John Goodboy</h4>
                             <p>Schloss Str, Potsdam</p>
                             <img src={Puppy} alt="#"/>
-                            <a href="">view details>></a>
+                            <div>
+                                <a href="#">view details>></a>
+                            </div>
                         </div>
                         <div>
                             <h4>Janneta</h4>
                             <p>Schloss Str, Potsdam</p>
                             <img src={Dog} alt="#"/>
-                            <a href="">view details>></a>
+                            <div>
+                                <a href="#">view details>></a>
+                            </div>
                         </div>
 
                     </div>
@@ -63,36 +72,35 @@ const LostPets = () => {
                             <h4>Leonard</h4>
                             <p>Oliver Platy, Berlin</p>
                             <img src={Cat} alt="#"/>
-                            <a href="">view details>></a>
+                            <div>
+                                <a href="#">view details>></a>
+                            </div>
                         </div>
                         <div>
                             <h4>Chick</h4>
                             <p>Schloss Str, Potsdam</p>
                             <img src={Parrot} alt="#"/>
-                            <a href="">view details>></a>
+                            <div>
+                                <a href="#">view details>></a>
+                            </div>
                         </div>
                         <div>
                             <h4>Basiliy</h4>
                             <p>Schloss Str, Potsdam</p>
                             <img src={Cat1} alt="#"/>
-                            <a href="">view details>></a>
+                            <div>
+                                <a href="#">view details>></a>
+                            </div>
                         </div>
 
                     </div>
                 </section>
 
-                <section>
-                    <section className="nav-left">
-                        <ProfileLogout/>
-                    </section>
+                <section className="nav-left">
+                    <ProfileLogout/>
                 </section>
+
             </section>
-
-
-
-
-
-
 
         </section>
 
@@ -102,4 +110,4 @@ const LostPets = () => {
 
 }
 
-export default LostPets
+export default HomeLost

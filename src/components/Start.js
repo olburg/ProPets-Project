@@ -11,6 +11,7 @@ import Header from "./Header";
 
 
 
+
 const Start = () => {
 
 
@@ -23,11 +24,25 @@ const Start = () => {
         <section className="start">
             <Header />
 
-
-
             <section className="welcome-wrapper">
                 <div className="welcome">
-                    <h1 className="welcome-text"> Welcome to your <span>pawfessional</span> community</h1>
+                    <div className="welcome-text"> Welcome to your <span>pawfessional</span> community</div>
+
+                    <div className="buttons">
+                        <div className='lost_button' onMouseEnter={ ()=> setLostButton("Click to find!") } onMouseOut={ ()=> setLostButton("I lost my pet!")}>
+                            <NavLink exact={true} to="/FoundPets">
+                                {lostButton}
+                                <img src={LogoPet} className="logo_pets" style={ {width: "200px", bottom: "0"} }/>
+                            </NavLink>
+                        </div>
+
+                        <div className="found_button" onMouseEnter={ ()=> setFoundButton("What to do?") } onMouseOut={ ()=> setFoundButton("I found a pet!")}>
+                            <div onMouseEnter={ ()=> setFoundButton("What to do?") } onMouseOut={ ()=> setFoundButton("I found a pet!")}>
+                                <NavLink exact={true} to="/LostPets"   >{foundButton}</NavLink>
+                            </div>
+                        </div>
+                    </div>
+
                     <div className="wanttojoin">
                         I’m okay, just want to <NavLink exact={true} to="/signIn"><span style={ {  color: "#06B2BB", textDecoration: "none", fontStyle: "bold"}  }>JOIN</span></NavLink> the pawsome community!
                     </div>
@@ -39,31 +54,19 @@ const Start = () => {
 
                 </div>
 
-                <section className="buttons">
-                    <div className='lost_button' onMouseEnter={ ()=> setLostButton("Click to find!") } onMouseOut={ ()=> setLostButton("I lost my pet!")}>
-                        <NavLink exact={true} to="/LostPets">
-                            {lostButton}
-                            <img src={LogoPet} className="logo_pets" style={ {width: "200px", bottom: "0"} }/>
-                        </NavLink>
-                    </div>
 
-                    <div className="found_button" onMouseEnter={ ()=> setFoundButton("What to do?") } onMouseOut={ ()=> setFoundButton("I found a pet!")}>
-                        <div onMouseEnter={ ()=> setFoundButton("What to do?") } onMouseOut={ ()=> setFoundButton("I found a pet!")}>
-                            <NavLink exact={true} to="/FoundPets"   >{foundButton}</NavLink>
-                        </div>
-                    </div>
-                </section>
             </section>
 
 
 
             <section className="about">
-                <div className="about-text" style={ {fontFamily: "Montserrat, sans-serif"}  }>Our fluffy space for lovers, admirers, dads and moms of our four-legged, winged, tailed guys.</div>
+                <div className="about-text" >Our fluffy space for lovers, admirers, dads and moms of our four-legged, winged, tailed guys.</div>
             </section>
 
 
-            <section style={ {padding: "20px 20px" }  }>
-                <div className="d-flex col-12 justify-content-between" style={ {width: "100%" }}>
+            <section style={ {padding: "20px 20px", width: "1336px", height: "450px"}  }>
+                <div className="d-flex row-col-6 justify-content-between">
+
                     <div className="">
                         <img src={Pets} alt="#"/>
                     </div>
@@ -71,9 +74,9 @@ const Start = () => {
 
 
                     <div className="service-list">
-                        <h3 className="header-text">
+                        <div className="header-text">
                             Here is collected everything that your pet needs:
-                        </h3>
+                        </div>
                         <div>
                             <ul>
                                 <li style={{ textDecorationColor: "#06B2BB"}  }>professional veterinarian tips;</li>
@@ -93,7 +96,7 @@ const Start = () => {
 
 
             <section className="footer d-flex col-12 justify-content-between">
-                <div><img src={Logo} alt="#"  /></div>
+                <div ><img src={Logo} alt="#" className="footer-photo"/></div>
                 <div style={ {color: "white", fontSize: "13px"}  }>1600 Amphitheatre Pkwy Mountain View, CA 94043, USA</div>
             </section>
 

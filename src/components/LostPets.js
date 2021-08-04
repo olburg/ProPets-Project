@@ -9,7 +9,7 @@ import Parrot from "../images/Parrot.png";
 import Cat1 from "../images/Cat1.png";
 import Header from "./Header";
 import Nav from "./Nav";
-import HeaderWhite from "./HeaderWhite";
+
 import HeaderStart from "./HeaderStart";
 
 
@@ -17,24 +17,26 @@ import HeaderStart from "./HeaderStart";
 const LostPets = () => {
     return (
 
-        <section>
-
-
-            <section>
+        <section className="container-fluid" style={ {width: "1336px"}  }>
+            <div >
                 <HeaderStart />
-            </section>
+            </div>
 
-            <section className="container-fluid d-flex row-cols-lg-3 row-cols-md-3">
-                <section>
-                    <Nav />
+            <section className="container d-flex row-cols-lg-3 row-cols-md-3 col-4" style={ {width: "1336px"}  }>
+
+                <section className="d-flex flex-row col-3" >
+                    <div className="col-4">
+                        <Nav />
+                    </div>
+
                 </section>
 
+                <section className="col col-6" >
+                    <div className="header-text">Lost pets</div>
+                    <hr/>
 
-                <section>
-                    <div><span>Lost pets</span></div>
-
-                    <div>
-                        Would you like to publish a post? <NavLink exact={true} to="/signIn">Join</NavLink> the our community!
+                    <div style={ {fontSize: "12px", marginBottom: "30px" } }>
+                        Would you like to publish a post? <NavLink exact={true} to="/signIn"><span style={{color: "#06B2BBCC"}}>JOIN</span></NavLink> the our community!
                     </div>
 
                     <div className="frow">
@@ -42,19 +44,26 @@ const LostPets = () => {
                             <h4>Uncle Sam</h4>
                             <p>Oliver Platy, Berlin</p>
                             <img src={BigDog} alt="#"/>
-                            <NavLink exact={true} to="/LostDog">view details>></NavLink>
+                            <div>
+                                <NavLink exact={true} to="/LostDog">view details>></NavLink>
+                            </div>
+
                         </div>
                         <div>
                             <h4>John Goodboy</h4>
                             <p>Schloss Str, Potsdam</p>
                             <img src={Puppy} alt="#"/>
-                            <a href="">view details>></a>
+                            <div>
+                                <a href="#">view details>></a>
+                            </div>
                         </div>
                         <div>
                             <h4>Janneta</h4>
                             <p>Schloss Str, Potsdam</p>
                             <img src={Dog} alt="#"/>
-                            <a href="">view details>></a>
+                            <div>
+                                <a href="#">view details>></a>
+                            </div>
                         </div>
 
                     </div>
@@ -64,28 +73,42 @@ const LostPets = () => {
                             <h4>Leonard</h4>
                             <p>Oliver Platy, Berlin</p>
                             <img src={Cat} alt="#"/>
-                            <a href="">view details>></a>
+                            <div>
+                                <a href="#">view details>></a>
+                            </div>
                         </div>
                         <div>
                             <h4>Chick</h4>
                             <p>Schloss Str, Potsdam</p>
                             <img src={Parrot} alt="#"/>
-                            <a href="">view details>></a>
+                            <div>
+                                <a href="#">view details>></a>
+                            </div>
                         </div>
                         <div>
                             <h4>Basiliy</h4>
                             <p>Schloss Str, Potsdam</p>
                             <img src={Cat1} alt="#"/>
-                            <a href="">view details>></a>
+                            <div>
+                                <a href="#">view details>></a>
+                            </div>
                         </div>
 
                     </div>
                 </section>
 
-                <section className="nav-right">
-                    <div></div>
+                {/*<section className=" col-4" style={ {width: "307px", backgroundColor: "#06B2BBCC", justifyContent: "flex-start"} }>*/}
+                {/*    <div></div>*/}
+                {/*</section>*/}
+
+                <section className="nav-right col-3">
+                    {/*<div></div>*/}
                 </section>
+
             </section>
+
+
+
 
 
 
