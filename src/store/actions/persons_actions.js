@@ -38,8 +38,15 @@ import personsInitial, {
   export const addNewPerson = (data) => {
     return async (dispatch) => {
       try {
-        const person = createPerson(data);
+        const response = await fetch("http://propets.telran-edu.de:8080/api/v1/auth/signup", {
+          method: "POST",
+          headers: {"Content-Type": "application/json"}
+        })
+        const person = response.json(data)
+        // const person = createPerson(data);
         await dispatch(addPerson(person));
+     
+
       } catch (err) {
         console.log(err.message);
       }

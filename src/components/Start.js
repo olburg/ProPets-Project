@@ -29,7 +29,7 @@ const Start = () => {
                 <div className="welcome">
                     <h1 className="welcome-text"> Welcome to your <span>pawfessional</span> community</h1>
                     <div className="wanttojoin">
-                        I’m okay, just want to <NavLink exact={true} to="/signIn"><span style={ {  color: "#06B2BB", textDecoration: "none", fontStyle: "bold"}  }>JOIN</span></NavLink> the pawsome community!
+                        I’m okay, just want to <NavLink exact={true} to="/signIn"><span style={ {  color: "#06B2BB", textDecoration: "underline", fontStyle: "bold"}  }>JOIN</span></NavLink> the pawsome community!
                     </div>
                 </div>
 
@@ -84,7 +84,7 @@ const Start = () => {
                         </div>
 
                         <div className="wanttojoin-footer">
-                            Make an account and <NavLink exact={true} to="/signIn"><span style={ {  color: "#06B2BB", textDecoration: "none", fontStyle: "bold"}  }>JOIN</span></NavLink> to us!
+                            Make an account and <NavLink exact={true} to="/signIn"><span style={ {  color: "#06B2BB", textDecoration: "underline", fontStyle: "bold"}  }>JOIN</span></NavLink> to us!
                         </div>
                     </div>
                 </div>
