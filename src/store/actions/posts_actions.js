@@ -15,7 +15,12 @@ export const getPosts = () => {
 export const addPost = (post) => {
   return async (dispatch) => {
     try {
-      const newPost = await addPostInServer(post);
+      const response = await fetch("http://propets.telran-edu.de:8080/api/v1/posts", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" }
+      })
+
+      const newPost = response.json(post);
       await dispatch(addPostInState(newPost));
     } catch (err) {
       console.log(err.message);

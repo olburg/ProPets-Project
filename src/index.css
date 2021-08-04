@@ -45,7 +45,7 @@ a {
 
 
 .start {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   /*position: relative;*/
 }
@@ -226,8 +226,10 @@ a {
 
 .wanttojoin {
   display: block;
-  padding-top: 600px;
-  padding-left: 50px;
+  position: relative;
+  padding-top: 500px;
+  padding-left: 190px;
+  font-weight: 700;
 }
 
 .wanttojoin-footer {
@@ -240,6 +242,7 @@ a {
   font-size: 30px;
   width: 60%;
   padding-top: 10px;
+ 
 }
 
 .dog {
@@ -335,9 +338,10 @@ a {
 .about {
   background-color: #06B2BB;
   color: white;
-  height: 260px;
+  /* height: 260px; */
   text-align: center;
-  padding: 30px 30px;
+  padding: 0px 0px;
+  width: 100%
 }
 
 .about-text {
@@ -346,7 +350,7 @@ a {
   width: 70%;
   text-align: center;
   padding: 0 40px 0;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 .nav {
@@ -449,5 +453,5 @@ a {
   width: 100%;
   height: 70px;
   padding: 30px 30px;
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
 }

@@ -1,9 +1,24 @@
-import React from "react";
+import React, { useState, useContext } from "react";
 import LogoGreen from "../images/LogoGreen.svg";
 import {Link, NavLink} from "react-router-dom";
 import Home from "./Home";
+import { connect } from "react-redux";
+import { addNewPerson } from "../store/actions/persons_actions";
 
-const SignIn = () => {
+
+const  SignIn = ({  addPerson }) => {
+    const [formData, setFormData] = useState({
+      fullName: "",
+      email: "",
+      password: "",
+    });
+  
+    const changeFieldHandle = (event) => {
+      setFormData({
+        ...formData,
+        [event.target.name]: event.target.value,
+      });
+    };
     return (
         <section className="container body_signin">
             <section className="signing">
@@ -15,24 +30,30 @@ const SignIn = () => {
                 <div className="d-flex flex-row ">
                     <div className="signUp w-50">
                         <div>Sign up</div>
-                        <form>
+                        <form method="POST" onSubmit={(e) => {
+                            e.preventDefault()
+                            addPerson(formData)
+                        }}>
                             <div className="row">
-                                <label>Name</label>
-                                <input type="text" className="form-control" name="fName"/>
+                                <label>FullName</label>
+                                <input type="text" className="form-control" name="fullName"  onChange={changeFieldHandle}/>
                             </div>
 
                             <div className="form-group">
                                 <label className="col-sm-2 col-form-label">Email</label>
-                                <input type="text" className="form-control" name="email"/>
+                                <input type="text" className="form-control" name="email"  onChange={changeFieldHandle}/>
                             </div>
                             <div className="form-group">
                                 <label>Password</label>
-                                <input type="text" className="form-control" name="password"/>
+                                <input type="text" className="form-control" name="password"  onChange={changeFieldHandle}/>
                             </div>
                             <div className="form-group">
                                 <label>Password</label>
-                                <input type="text" className="form-control" name="password"/>
+                                <input type="text" className="form-control" name="password"  onChange={changeFieldHandle}/>
                             </div>
+                            <button type="submit" className="btn">
+                          Submit
+                          </button>
                         </form>
                     </div>
 
@@ -52,9 +73,9 @@ const SignIn = () => {
                         <NavLink exact={true} to="/">Cancel</NavLink>
                     </button>
 
-                    <button type="submit" className="btn">
+                    {/* <button type="submit" className="btn">
                         <NavLink exact={true} to="/Home">Submit</NavLink>
-                    </button>
+                    </button> */}
                 </div>
 
 
@@ -63,6 +84,14 @@ const SignIn = () => {
         </section>
 
     )
+
+
 }
 
-export default SignIn
+const mapDispatchToProps = (dispatch) => {
+    return {
+        addPerson: (person) => dispatch(addNewPerson(person)),
+    };
+  };
+  
+  export default connect(null, mapDispatchToProps)(SignIn)
